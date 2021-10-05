@@ -14,6 +14,10 @@ public class Classic implements Music{
         this.author = author;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public String toString() {
         return "Classic{" +
