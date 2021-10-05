@@ -9,6 +9,9 @@
 
    # Singleton 
         Scopes a single bean definition to a single object instance per Spring IoC container.
-        
+
    # prototype
         Scopes a single bean definition to any number of object instances.
+
+## Bean Life Cycle (Init and Destroy method)
+    Spring bean is easy to understand. When a bean is instantiated, it may be required to perform some initialization to get it into a usable state. Similarly, when the bean is no longer required and is removed from the container, some cleanup may be required.

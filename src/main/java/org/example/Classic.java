@@ -17,6 +17,13 @@ public class Classic implements Music{
     public void setName(String name) {
         this.name = name;
     }
+    public void initMethod(){// not mandatory, can take another name
+        System.out.println("init method for Classic music class ");
+    }
+
+    public void destroyMethod(){// not mandatory, can take another name
+        System.out.println("Destroy method for Classic music class");
+    }
 
     @Override
     public String toString() {

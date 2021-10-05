@@ -23,17 +23,12 @@
 
     </bean>
 
-    <bean id = "classicMusic" class="org.example.Classic">
+    <bean id = "classicMusic" class="org.example.Classic" init-method="initMethod" destroy-method="destroyMethod">
         <constructor-arg index="0" value="Nibelung"/>
         <constructor-arg index="1" value="Bach"/>
     </bean>
 
     <bean id = "Player" class="org.example.MusicPlayer">
-<!--        <constructor-arg index="0">-->
-<!--            <list>-->
-<!--                <ref bean="classicMusic" />-->
-<!--            </list>-->
-<!--        </constructor-arg>-->
         <property name="musicList">
             <list>
                 <ref bean="classicMusic"/>
