@@ -7,35 +7,6 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-<!--    <bean id="testBean"-->
-<!--          class="org.example.TestBean">-->
-<!--        <constructor-arg value="Neil"/>-->
-<!--    </bean>-->
-
-<!--    <bean id = "secondTest"-->
-<!--          class="org.example.TestBean">-->
-<!--        <constructor-arg index="0" value="Andy"/>-->
-<!--        <constructor-arg index="1" value="50"/>-->
-<!--    </bean>-->
-    <bean id = "rockMusic" class="org.example.Rock" scope="prototype">
-            <constructor-arg index="0" value="Bohemia rhapsody"/>
-            <constructor-arg index="1" value="Fredy"/>
-
-    </bean>
-
-    <bean id = "classicMusic" class="org.example.Classic" init-method="initMethod" destroy-method="destroyMethod">
-        <constructor-arg index="0" value="Nibelung"/>
-        <constructor-arg index="1" value="Bach"/>
-    </bean>
-
-    <bean id = "Player" class="org.example.MusicPlayer">
-        <property name="musicList">
-            <list>
-                <ref bean="classicMusic"/>
-                <ref bean="rockMusic"/>
-            </list>
-        </property>
-    </bean>
-
+        <context:component-scan base-package="org.example"/>
 
 </beans>

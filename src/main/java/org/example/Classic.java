@@ -1,5 +1,8 @@
 package org.example;
 
+import org.springframework.stereotype.Component;
+
+@Component("classicMusic")
 public class Classic implements Music{
     private String name;
     private String author;
@@ -13,10 +16,12 @@ public class Classic implements Music{
         this.name = name;
         this.author = author;
     }
+    public Classic(){}
 
     public void setName(String name) {
         this.name = name;
     }
+
     public void initMethod(){// not mandatory, can take another name
         System.out.println("init method for Classic music class ");
     }
