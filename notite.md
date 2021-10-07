@@ -18,3 +18,6 @@
 
 ## Annotation
     Annotations is a form of metadata that provides data about a program. In other words, annotations are used to provide supplemental information about a program. It is not a part of the application that we develop. It does not have a direct effect on the operation of the code they annotate. It does not change the action of the compiled program.
+## Pass to XML + Annotation => Only Annotation
+    * Remove XML file and add SpringConfigration class with @componentScan("Pakage wiwt project") and @Configuration  Annotation.
+    
